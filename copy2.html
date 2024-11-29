@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relux</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Topカルーセル(PC,SP)の写真枚数が3枚以上 -->
+    <div class="key_visual">
+        <button class="slick-prev">Previous</button> <!-- ここにボタンを配置 -->
+        <div class="js-slick-slider">
+            <div class="hotel-1">
+                <img src="img/4ca286425896eaf4e8e7679c3012b010_t.jpeg" class="header_img" alt="ホテル1">
+            </div>
+            <div class="hotel-2">
+                <img src="img/17c09aa3463f3fa151f564bb1c41ba8c_t.jpeg" class="header_img" alt="ホテル2">
+            </div>
+            <div class="hotel-3">
+                <img src="img/240_F_477003485_mDmcw85DY2I8yI5k7U3JQC3Z0CzDj7n9.jpg" class="header_img" alt="ホテル3">
+            </div>
+        </div>
+        <button class="slick-next">Next</button> <!-- ここにボタンを配置 -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('touchmove', function (event) {
+                // あなたの処理コード
+            }, { passive: true });
+
+            // Slickの設定
+            $('.js-slick-slider').slick({
+                speed: 1000,
+                dots: true,
+                prevArrow: $('.slick-prev'),
+                nextArrow: $('.slick-next'),
+                adaptiveHeight: true  /* 高さを自動調整 */
+            });
+        });
+    </script>
+</body>
+
+</html>
